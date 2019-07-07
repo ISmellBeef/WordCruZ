@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        CWordCruZInputLtrCrcl view = new CWordCruZInputLtrCrcl(this);
+
+        this.setContentView(view);
 
 
         FloatingActionButton fab = findViewById(R.id.fab);

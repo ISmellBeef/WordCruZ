@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        SquareView = new CWordCruZSquareBuilder(this);
-        setContentView(SquareView);
+        //SquareView = new CWordCruZSquareBuilder(this);
+        //setContentView(SquareView);
     }
 
     @Override

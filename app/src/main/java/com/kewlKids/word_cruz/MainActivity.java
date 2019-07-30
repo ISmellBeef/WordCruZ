@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        //hey julian this is my program
         SquareView = new CWordCruZSquareBuilder(this);
         SquareView.setBackgroundColor(Color.WHITE);
         setContentView(SquareView);

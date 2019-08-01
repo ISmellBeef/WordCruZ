@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.os.Bundle;
 import android.view.View;
 
 public class CWordCruZInputLtrCrcl extends View {
@@ -21,4 +22,9 @@ public class CWordCruZInputLtrCrcl extends View {
         paint.setColor(Color.WHITE);
         canvas.drawCircle(250, 250, 250, paint);
     }
+
+    //protected void onCreate(Bundle savedInstanceState){
+    //super.onCreate(savedInstanceState);
+
+    //}
 }

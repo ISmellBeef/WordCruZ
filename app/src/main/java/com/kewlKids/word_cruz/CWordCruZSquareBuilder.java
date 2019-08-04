@@ -1,4 +1,5 @@
 package com.kewlKids.word_cruz;
+        import android.graphics.Rect;
         import android.os.Bundle;
         import android.app.Activity;
         import android.view.Menu;
@@ -10,17 +11,24 @@ package com.kewlKids.word_cruz;
 public class CWordCruZSquareBuilder extends View{
 
 
-    Paint paint = new Paint();
+    Paint square_def = new Paint();
     public  CWordCruZSquareBuilder(Context context){
         super(context);
     }
 
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        paint.setColor(Color.RED);
-        paint.setStrokeWidth(3);
-        paint.setStyle(Paint.Style.STROKE);
-        canvas.drawRect(80, 80, 80, 80, paint);
+
+        Rect My_Square = new Rect();
+        My_Square.set(80, 80, 80, 80);
+
+        square_def.setColor(Color.RED);
+        square_def.setStrokeWidth(3);
+        square_def.setStyle(Paint.Style.STROKE);
+
+        canvas.drawRect(My_Square, square_def);
+
+
     }
 }
 

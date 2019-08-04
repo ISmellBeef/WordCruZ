@@ -25,6 +25,7 @@ public class CWordCruZSquareBuilder extends View{
         square_def.setColor(Color.RED);
         square_def.setStrokeWidth(3);
         square_def.setStyle(Paint.Style.STROKE);
+        square_def.setAntiAlias(true);
 
         canvas.drawRect(My_Square, square_def);
 

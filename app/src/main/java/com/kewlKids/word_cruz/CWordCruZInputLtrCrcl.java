@@ -17,6 +17,7 @@ public class CWordCruZInputLtrCrcl extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
+        //white circle
         super.onDraw(canvas);
         paint.setAntiAlias(true);
         paint.setColor(Color.WHITE);

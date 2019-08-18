@@ -11,26 +11,21 @@ package com.kewlKids.word_cruz;
 public class CWordCruZSquareBuilder extends View{
 
 
-    Paint square_def = new Paint();
-    public  CWordCruZSquareBuilder(Context context){
-        super(context);
+    Paint paint = new Paint();
+
+    CWordCruZSquareBuilder(Context c) {
+        super(c);
     }
 
+    @Override
     protected void onDraw(Canvas canvas) {
+        //white circle
         super.onDraw(canvas);
-
-        Rect My_Square = new Rect();
-        My_Square.set(80, 80, 200, 200);
-
-        square_def.setColor(Color.RED);
-        square_def.setStrokeWidth(3);
-        square_def.setStyle(Paint.Style.STROKE);
-        square_def.setAntiAlias(true);
-
-        canvas.drawRect(My_Square, square_def);
-
-
+        paint.setAntiAlias(true);
+        paint.setColor(Color.RED);
+        canvas.drawCircle(250, 250, 250, paint);
     }
+
 }
 
 

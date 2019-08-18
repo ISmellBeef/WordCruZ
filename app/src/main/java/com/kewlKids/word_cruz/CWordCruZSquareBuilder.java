@@ -23,7 +23,7 @@ public class CWordCruZSquareBuilder extends View{
         super.onDraw(canvas);
         paint.setAntiAlias(true);
         paint.setColor(Color.RED);
-        canvas.drawCircle(250, 250, 250, paint);
+        canvas.drawCircle(400, 400, 200, paint);
     }
 
 }

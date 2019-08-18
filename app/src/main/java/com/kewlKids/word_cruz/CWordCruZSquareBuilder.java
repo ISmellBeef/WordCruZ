@@ -20,10 +20,10 @@ public class CWordCruZSquareBuilder extends View{
         super.onDraw(canvas);
 
         Rect My_Square = new Rect();
-        My_Square.set(200, 200, 200, 200);
+        My_Square.set(80, 80, 200, 200);
 
         square_def.setColor(Color.RED);
-        square_def.setStrokeWidth(5);
+        square_def.setStrokeWidth(3);
         square_def.setStyle(Paint.Style.STROKE);
         square_def.setAntiAlias(true);
 

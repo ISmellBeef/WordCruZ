@@ -17,15 +17,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
-    CWordCruZSquareBuilder SquareView;
+
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //hey julian this is my program
-        SquareView = new CWordCruZSquareBuilder(this);
-        SquareView.setBackgroundColor(Color.WHITE);
-        setContentView(SquareView);
+        CWordCruZSquareBuilder Squareview = new CWordCruZSquareBuilder(this);
+
+        this.setContentView(Squareview);
 
         setContentView(R.layout.activity_main);
 

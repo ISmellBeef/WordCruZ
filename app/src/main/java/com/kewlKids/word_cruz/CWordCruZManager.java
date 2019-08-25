@@ -8,11 +8,11 @@ public class CWordCruZManager {
             for (int a = 0; a < wordnum;a++)
             {
                 words[a] = rand.nextInt();
-                for (int i = 0; i <)
+               // for (int i = 0; i <)
             }
             return words;
     }
-    public String charUnion (String word1,String word2,int maxunion)
+    public String charUnion (String word1,String word2)
     {
         char wc1 [] = new char[word1.length()];
         char wc2 [] = new char[word2.length()];
@@ -46,15 +46,18 @@ public class CWordCruZManager {
         {
             total[count] = wc2[i];
         }
+        count = 0;
         for (int i = 0;i < intersection.length;i++)
         {
             for (int j = 0; j < total.length;j++)
             {
                 if (intersection[i]== total[j] )
                 {
-                    union
+                    union[count] = intersection[i];
                 }
             }
         }
+        String get = union.toString();
+        return get;
     }
 }

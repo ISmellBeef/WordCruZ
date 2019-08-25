@@ -9,6 +9,7 @@ public class CWordCruZManager {
             {
                 words[a] = rand.nextInt();
                // for (int i = 0; i <)
+
             }
             return words;
     }

@@ -46,6 +46,7 @@ public class CWordCruZManager {
         for (int i = 0; i < wc2.length;i++,count++)
         {
             total[count] = wc2[i];
+
         }
         count = 0;
         for (int i = 0;i < intersection.length;i++)

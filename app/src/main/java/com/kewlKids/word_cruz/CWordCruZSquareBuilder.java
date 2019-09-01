@@ -1,38 +1,32 @@
 package com.kewlKids.word_cruz;
-        import android.graphics.Rect;
-        import android.os.Bundle;
-        import android.app.Activity;
-        import android.view.Menu;
-        import android.content.Context;
-        import android.graphics.Canvas;
-        import android.graphics.Color;
-        import android.graphics.Paint;
-        import android.view.View;
+import android.graphics.Rect;
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.view.View;
 public class CWordCruZSquareBuilder extends View{
 
-
-    Paint square_def = new Paint();
-    public  CWordCruZSquareBuilder(Context context){
-        super(context);
+    Paint rect_def = new Paint();
+    CWordCruZSquareBuilder(Context c) {
+        super(c);
     }
+
 
     protected void onDraw(Canvas canvas) {
+
         super.onDraw(canvas);
-
-        Rect My_Square = new Rect();
-        My_Square.set(80, 80, 80, 80);
-
-        square_def.setColor(Color.RED);
-        square_def.setStrokeWidth(3);
-        square_def.setStyle(Paint.Style.STROKE);
-        square_def.setAntiAlias(true);
-
-        canvas.drawRect(My_Square, square_def);
-
-
+        rect_def.setAntiAlias(true);
+        rect_def.setColor(Color.RED);
+        rect_def.setStyle( Paint.Style.STROKE );
+        rect_def.setStrokeWidth( 15 );
+        canvas.drawRect(70, 70, 230, 230, rect_def);
     }
-}
 
+}
 
 
 

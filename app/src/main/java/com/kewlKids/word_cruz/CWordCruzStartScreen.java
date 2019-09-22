@@ -1,18 +1,18 @@
 package com.kewlKids.word_cruz;
 
 import java.util.Scanner;
-import java.awt.Graphics;
-import java.awt.image.BufferedImage;
+//import java.awt.Graphics;
+//import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.imageio.ImageIO;
-import javax.swing.JPanel;
+//import javax.imageio.ImageIO;
+//import javax.swing.JPanel;
 
-public class CWordCruzStartScreen extends JPanel{
+public class CWordCruzStartScreen /*extends JPanel*/{
 
-    private BufferedImage image;
+    /*private BufferedImage image;
 
     public ImagePanel() {
         try {
@@ -27,6 +27,6 @@ public class CWordCruzStartScreen extends JPanel{
         g.drawImage(image, 0, 0, this);
     }
 
-}
+}*/
 
 }

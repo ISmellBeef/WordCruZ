@@ -32,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
         this.setContentView(Squareview);
 
+        CWordCruZDrawLine drag = new CWordCruZDrawLine();
+        drag.LineDragPro();
+
 
 
 

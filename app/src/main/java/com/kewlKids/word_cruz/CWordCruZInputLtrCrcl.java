@@ -5,14 +5,26 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 
 
 
 public class CWordCruZInputLtrCrcl extends View {
-
+    private CWordCruZManager workmanager = null;
+    private CWordCruZDrawLine  WordCruZDrawLine = new CWordCruZDrawLine();
     CWordCruZInputLtrCrcl(Context c) {
         super(c);
+        WordCruZDrawLine.SetView(this);
+    }
+    public void SetManager(CWordCruZManager v)
+    {
+        workmanager = v;
+    }
+    public boolean OnTouchEvent(MotionEvent ev){
+
+
+        return WordCruZDrawLine.OnTouchMe(ev);
     }
 
     Paint paint = new Paint();
@@ -39,6 +51,8 @@ public class CWordCruZInputLtrCrcl extends View {
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeWidth(10);
         paint.setColor(Color.BLACK);
+
+        WordCruZDrawLine.onDrawMe(canvas);
     }
 
     //protected void onCreate(Bundle savedInstanceState){

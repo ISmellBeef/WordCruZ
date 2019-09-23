@@ -9,13 +9,15 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.view.View;
 public class CWordCruZSquareBuilder extends View{
-
+    CWordCruZManager workmanager = null;
     Paint rect_def = new Paint();
     CWordCruZSquareBuilder(Context c) {
         super(c);
     }
-
-
+    public void SetManager(CWordCruZManager v)
+    {
+        workmanager = v;
+    }
     protected void onDraw(Canvas canvas) {
 
         super.onDraw(canvas);

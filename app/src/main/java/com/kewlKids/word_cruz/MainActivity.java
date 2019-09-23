@@ -15,28 +15,24 @@ import android.view.View;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
-
+    private CWordCruZManager manager = new CWordCruZManager();
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        CWordCruZInputLtrCrcl view = new CWordCruZInputLtrCrcl(this);
+        LinearLayout ln = (LinearLayout) this.findViewById(R.id.lnLayout);
 
-        this.setContentView(view);
+        CWordCruZInputLtrCrcl view = (CWordCruZInputLtrCrcl) ln.findViewById(R.id.id_WordCruZInputLtrCrcl);
 
-        CWordCruZSquareBuilder Squareview = new CWordCruZSquareBuilder(this);
+        view.SetManager(manager);
 
-        this.setContentView(Squareview);
+        CWordCruZSquareBuilder SquareView = (CWordCruZSquareBuilder) ln.findViewById(R.id.id_WordCruZSquareBuilder);
 
-        CWordCruZDrawLine drag = new CWordCruZDrawLine();
-        drag.LineDragPro();
-
-
-
+        SquareView.SetManager(manager);
 
         //SquareView = new CWordCruZSquareBuilder(this);
         //setContentView(SquareView);

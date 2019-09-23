@@ -15,7 +15,7 @@ public class CWordCruZInputLtrCrcl extends View {
     private CWordCruZDrawLine  WordCruZDrawLine = new CWordCruZDrawLine();
     CWordCruZInputLtrCrcl(Context c) {
         super(c);
-        WordCruZDrawLine.SetView(this);
+        WordCruZDrawLine.SetParent(this);
     }
     public void SetManager(CWordCruZManager v)
     {

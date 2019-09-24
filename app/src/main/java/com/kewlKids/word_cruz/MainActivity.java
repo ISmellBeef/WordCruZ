@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        manager.SetMainActivity(this);
         LinearLayout ln = (LinearLayout) this.findViewById(R.id.lnLayout);
 
         CWordCruZInputLtrCrcl view = (CWordCruZInputLtrCrcl) ln.findViewById(R.id.id_WordCruZInputLtrCrcl);
@@ -36,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
 
         //SquareView = new CWordCruZSquareBuilder(this);
         //setContentView(SquareView);
+    }
+    public boolean GoodAnswer(String word){
+        LinearLayout ln = (LinearLayout) this.findViewById(R.id.lnLayout);
+        CWordCruZSquareBuilder SquareView = (CWordCruZSquareBuilder) ln.findViewById(R.id.id_WordCruZSquareBuilder);
+        return SquareView.GoodAnswer(word);
     }
 }
 

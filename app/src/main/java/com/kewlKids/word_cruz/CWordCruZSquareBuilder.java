@@ -8,8 +8,13 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.view.View;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class CWordCruZSquareBuilder extends View{
     CWordCruZManager workmanager = null;
+    ArrayList<LetterSquareList>  LetterSquareListArray = new   ArrayList<LetterSquareList>();
     Paint rect_def = new Paint();
     CWordCruZSquareBuilder(Context c) {
         super(c);
@@ -18,14 +23,18 @@ public class CWordCruZSquareBuilder extends View{
     {
         workmanager = v;
     }
-    protected void onDraw(Canvas canvas) {
 
+    @Override
+    protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        rect_def.setAntiAlias(true);
-        rect_def.setColor(Color.RED);
-        rect_def.setStyle( Paint.Style.STROKE );
-        rect_def.setStrokeWidth( 15 );
-        canvas.drawRect(70, 70, 230, 230, rect_def);
+        Iterator<LetterSquareList> iter = LetterSquareListArray.iterator();
+        while(iter.hasNext()){
+            LetterSquareList l = iter.next();
+            l.DrawMe(rect_def,canvas);
+        }
+    }
+    boolean GoodAnswer(String word){
+      return false;
     }
 
 }

@@ -8,6 +8,7 @@ public class CWordCruZDrawLine
 
     public boolean OnTouchMe(MotionEvent ev)
     {
+        //ParentView.GoodAnswer("");
         return true;
     }
     public void SetParent(CWordCruZInputLtrCrcl v){

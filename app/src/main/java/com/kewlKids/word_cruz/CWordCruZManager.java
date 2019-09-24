@@ -1,6 +1,7 @@
 package com.kewlKids.word_cruz;
 import java.util.Random;
 public class CWordCruZManager {
+    private MainActivity Activity = null;
     public int Randomwords (int list[],int wordnum, int maxletter,int minletter)[]
     {
             Random rand = new Random(list.length);
@@ -12,6 +13,9 @@ public class CWordCruZManager {
 
             }
             return words;
+    }
+    void SetMainActivity(MainActivity a){
+        Activity = a;
     }
     public String charUnion (String word1,String word2)
     {
@@ -61,5 +65,8 @@ public class CWordCruZManager {
         }
         String get = union.toString();
         return get;
+    }
+    public boolean GoodAnswer(String word){
+        return Activity.GoodAnswer(word);
     }
 }

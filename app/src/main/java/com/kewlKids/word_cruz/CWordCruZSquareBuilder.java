@@ -17,7 +17,7 @@ public class CWordCruZSquareBuilder extends View{
     }
 
 
-    protected void onDraw(Canvas canvas) {
+    public void onDraw(Canvas canvas) {
 
         super.onDraw(canvas);
         Rect rect = new Rect();
@@ -25,8 +25,10 @@ public class CWordCruZSquareBuilder extends View{
        rect_def.setAntiAlias(true);
        rect_def.setColor(Color.RED);
        rect_def.setStyle(Paint.Style.STROKE);
+       rect_def.setStrokeWidth(3);
        rect.set(10,10,40,40);
        canvas.drawRect(rect, rect_def);
+
     }
 
 

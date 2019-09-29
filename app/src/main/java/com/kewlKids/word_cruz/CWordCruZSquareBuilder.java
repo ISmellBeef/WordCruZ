@@ -8,29 +8,44 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.view.View;
-public class CWordCruZSquareBuilder extends View{
-    //making the paint and rect
-    Paint rect_def = new Paint();
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
+
+public class CWordCruZSquareBuilder extends View{
+    CWordCruZManager workmanager = null;
+
+    ArrayList<LetterSquareList>  LetterSquareListArray = new   ArrayList<LetterSquareList>();
+    Paint rect_def = new Paint();
     CWordCruZSquareBuilder(Context c) {
         super(c);
     }
-
-
-    public void onDraw(Canvas canvas) {
-
-        super.onDraw(canvas);
-        Rect rect = new Rect();
-        //defining the rectangle
-       rect_def.setAntiAlias(true);
-       rect_def.setColor(Color.RED);
-       rect_def.setStyle(Paint.Style.STROKE);
-       rect_def.setStrokeWidth(3);
-       rect.set(10,10,40,40);
-       canvas.drawRect(rect, rect_def);
-
+    public void SetManager(CWordCruZManager v)
+    {
+        workmanager = v;
     }
 
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+        Iterator<LetterSquareList> iter = LetterSquareListArray.iterator();
+        while(iter.hasNext()){
+            LetterSquareList l = iter.next();
+            l.DrawMe(rect_def,canvas);
+        }
+    }
+    boolean GoodAnswer(String word){
+        Iterator<LetterSquareList> iter = LetterSquareListArray.iterator();
+        while(iter.hasNext()) {
+            LetterSquareList l = iter.next();
+            if (l.GetWord().equals(word)) {
+                l.OnAnswerCorrect();
+                return true;
+            }
+        }
+        return false;
+    }
 
 }
 

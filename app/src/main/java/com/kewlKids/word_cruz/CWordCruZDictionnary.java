@@ -21,6 +21,7 @@ public class CWordCruZDictionnary {
             while ((line = bufferedReader.readLine()) != null) {
                 a++;
             }
+
             String dic[] = new String[a];
             a = 0;
             FileReader fileReader1 = new FileReader(dicfile);

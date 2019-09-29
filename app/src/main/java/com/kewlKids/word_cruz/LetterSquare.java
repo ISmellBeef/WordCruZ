@@ -15,9 +15,11 @@ public class LetterSquare {
     public char getLetter(){
         return Letter;
     }
-    public Rect getRect(){
-        return Area;
+    public void setLetter(char c){
+        Letter = c;
     }
+
+
     public void DrawMe(Paint paint, Canvas canvas) {
         paint.setAntiAlias(true);
         paint.setColor(Color.RED);

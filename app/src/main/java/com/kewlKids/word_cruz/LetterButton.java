@@ -15,8 +15,9 @@ public class LetterButton {
     public char getLetter(){
         return Letter;
     }
-    public Rect getRect(){
-        return Area;
+
+    public boolean isSelected(int x, int y){
+        return false;
     }
     public void DrawMe(Paint paint,Canvas canvas) {
         //white circle

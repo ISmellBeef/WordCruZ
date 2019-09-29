@@ -15,6 +15,9 @@ public class LetterSquare {
     public char getLetter(){
         return Letter;
     }
+    public void setLetter(char c){
+        Letter = c;
+    }
     public Rect getRect(){
         return Area;
     }

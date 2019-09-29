@@ -34,7 +34,15 @@ public class CWordCruZSquareBuilder extends View{
         }
     }
     boolean GoodAnswer(String word){
-      return false;
+        Iterator<LetterSquareList> iter = LetterSquareListArray.iterator();
+        while(iter.hasNext()) {
+            LetterSquareList l = iter.next();
+            if (l.GetWord().equals(word)) {
+                l.OnAnswerCorrect();
+                return true;
+            }
+        }
+        return false;
     }
 
 }

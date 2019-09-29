@@ -69,4 +69,5 @@ public class CWordCruZManager {
     public boolean GoodAnswer(String word){
         return Activity.GoodAnswer(word);
     }
+
 }

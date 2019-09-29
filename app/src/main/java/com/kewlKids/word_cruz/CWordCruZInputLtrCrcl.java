@@ -9,7 +9,7 @@ import android.view.MotionEvent;
 import android.view.View;
 
 
-public class CWordCruZInputLtrCrcl extends View {
+public class CWordCruZInputLtrCrcl extends View{
     private CWordCruZManager workmanager = null;
     private CWordCruZDrawLine  WordCruZDrawLine = new CWordCruZDrawLine();
     private LetterButtonManager ButtonManager = new LetterButtonManager();
@@ -23,9 +23,13 @@ public class CWordCruZInputLtrCrcl extends View {
     {
         workmanager = v;
     }
-    public boolean OnTouchEvent(MotionEvent ev){
+    public boolean OnTouch(MotionEvent ev){
 
-
+       if(ev.getction() == MotionEvent.ACTION_DOWN)
+       {
+           int selX = (int)ev.getX();
+           int selY = (int)ev.getY();
+       }
         return WordCruZDrawLine.OnTouchMe(ev);
     }
 

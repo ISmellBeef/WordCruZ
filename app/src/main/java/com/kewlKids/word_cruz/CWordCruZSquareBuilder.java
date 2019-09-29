@@ -18,7 +18,6 @@ public class CWordCruZSquareBuilder extends View{
 
 
 
-
     public void onDraw(Canvas canvas) {
 
         super.onDraw(canvas);

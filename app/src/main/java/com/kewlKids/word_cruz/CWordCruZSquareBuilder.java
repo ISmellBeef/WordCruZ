@@ -15,7 +15,6 @@ public class CWordCruZSquareBuilder extends View{
     CWordCruZSquareBuilder(Context c) {
         super(c);
     }
-
     
     public void onDraw(Canvas canvas) {
 

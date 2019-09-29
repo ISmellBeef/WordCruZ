@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         //setContentView(SquareView);
         view.setOnTouchListener(this);
     }
+
     @Override
     public boolean onTouch(View view,MotionEvent event) {
         if( view instanceof CWordCruZInputLtrCrcl)

@@ -11,7 +11,6 @@ public class CWordCruZDrawLine
         //ParentView.GoodAnswer("");
         return true;
 
-
     }
     public void SetParent(CWordCruZInputLtrCrcl v){
         ParentView = v;

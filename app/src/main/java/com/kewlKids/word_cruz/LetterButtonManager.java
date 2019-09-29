@@ -19,6 +19,7 @@ public class LetterButtonManager {
         while(iter.hasNext()){
             LetterButton button = iter.next();
             button.DrawMe(paint,canvas);
+
         }
     }
 }

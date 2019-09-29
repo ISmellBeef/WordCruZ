@@ -19,6 +19,7 @@ public class CWordCruZInputLtrCrcl extends View{
         super(c);
         WordCruZDrawLine.SetParent(this);
     }
+
     public void SetManager(CWordCruZManager v)
     {
         workmanager = v;

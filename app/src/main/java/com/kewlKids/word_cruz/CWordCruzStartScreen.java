@@ -10,6 +10,7 @@ import java.util.logging.Logger;
 //import javax.imageio.ImageIO;
 //import javax.swing.JPanel;
 
+
 public class CWordCruzStartScreen /*extends JPanel*/{
 
     /*private BufferedImage image;

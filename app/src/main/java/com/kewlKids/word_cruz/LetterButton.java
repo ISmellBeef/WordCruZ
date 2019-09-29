@@ -15,6 +15,7 @@ public class LetterButton {
     public char getLetter(){
         return Letter;
     }
+
     public boolean isSelected(int x, int y){
         return false;
     }

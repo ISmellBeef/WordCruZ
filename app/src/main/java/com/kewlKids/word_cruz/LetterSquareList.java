@@ -6,7 +6,6 @@ import android.graphics.Rect;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-
 public class LetterSquareList {
     private ArrayList<LetterSquare> SquareList = new ArrayList<LetterSquare>();
     private String Word;

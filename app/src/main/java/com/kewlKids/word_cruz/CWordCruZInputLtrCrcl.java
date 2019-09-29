@@ -26,7 +26,7 @@ public class CWordCruZInputLtrCrcl extends View{
     }
     public boolean OnTouch(MotionEvent ev){
 
-       if(ev.getction() == MotionEvent.ACTION_DOWN)
+       if(ev.getAction() == MotionEvent.ACTION_DOWN)
        {
            int selX = (int)ev.getX();
            int selY = (int)ev.getY();

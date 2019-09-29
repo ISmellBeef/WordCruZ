@@ -13,6 +13,7 @@ public class LetterSquareList {
         return SquareList;
     }
     public void AddSquareButton(String w,Rect r) {
+
         Word = w;
         for(int index = 0; index < Word.length();index++) {
             Rect curRect = new Rect();

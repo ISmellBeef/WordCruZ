@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 
+
 public class CWordCruZSquareBuilder extends View{
     CWordCruZManager workmanager = null;
     ArrayList<LetterSquareList>  LetterSquareListArray = new   ArrayList<LetterSquareList>();

@@ -15,6 +15,7 @@ import java.util.Iterator;
 
 public class CWordCruZSquareBuilder extends View{
     CWordCruZManager workmanager = null;
+
     ArrayList<LetterSquareList>  LetterSquareListArray = new   ArrayList<LetterSquareList>();
     Paint rect_def = new Paint();
     CWordCruZSquareBuilder(Context c) {

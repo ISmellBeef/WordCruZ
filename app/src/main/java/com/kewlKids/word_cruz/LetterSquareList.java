@@ -33,6 +33,7 @@ public class LetterSquareList {
             index++;
         }
     }
+
     public void DrawMe(Paint paint, Canvas canvas){
         Iterator<LetterSquare> iter = SquareList.iterator();
         while(iter.hasNext()){
